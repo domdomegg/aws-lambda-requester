@@ -1,0 +1,11 @@
+{
+  "name": "aws-lambda-requester",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "domdomegg / Adam Jones",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "chrome-aws-lambda": "3.1.1",
+    "puppeteer-core": "3.1.0"
+  }
+}
