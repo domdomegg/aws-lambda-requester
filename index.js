@@ -1,4 +1,4 @@
-const chromium = require('chrome-aws-lambda');
+const chromium = require('@sparticuz/chrome-aws-lambda');
 
 exports.handler = async (event, context) => {
     let browser = null;
@@ -7,6 +7,7 @@ exports.handler = async (event, context) => {
         args: chromium.args,
         defaultViewport: chromium.defaultViewport,
         executablePath: await chromium.executablePath,
+        // executablePath: '/usr/bin/google-chrome-stable',
         headless: chromium.headless,
         ignoreHTTPSErrors: true,
     });
@@ -24,3 +25,5 @@ exports.handler = async (event, context) => {
 
     await browser.close();
 };
+
+// exports.handler()
